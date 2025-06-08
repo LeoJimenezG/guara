@@ -59,6 +59,8 @@ def test_sample_web_page():
 ### Behind the Scenes
 The repetitive web driver code is encapsulated in a transaction class:
 ```python
+from guara.transaction import AbstractTransaction
+
 class ChangeToPortuguese(AbstractTransaction):
     def do(self, **kwargs):
         self._driver.find_element(By.CSS_SELECTOR, ".btn:nth-child(3) > button:nth-child(1) > img").click()
@@ -115,6 +117,7 @@ Guará is the Tupi–Guarani name for the **Scarlet Ibis**, a vibrant bird nativ
 - [@srmorita/py-selenium-practices](https://github.com/srmorita/py-selenium-practices)
 - [@douglasdcm/automacao_de_testes](https://github.com/douglasdcm/automacao_de_testes)
 - [@chalakbilla/React-tutorials](https://github.com/chalakbilla/React-tutorials)
+- [@chriskyfung/InstapaperScraper](https://github.com/chriskyfung/InstapaperScraper)
 
 
 ## Ready to Dive In?
